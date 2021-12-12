@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/resourceedge/static/css/main.99b5ea5b.chunk.css",
+    "main.js": "/resourceedge/static/js/main.eb0f044c.chunk.js",
+    "main.js.map": "/resourceedge/static/js/main.eb0f044c.chunk.js.map",
+    "runtime-main.js": "/resourceedge/static/js/runtime-main.e528aaa5.js",
+    "runtime-main.js.map": "/resourceedge/static/js/runtime-main.e528aaa5.js.map",
+    "static/js/2.9c8ccf40.chunk.js": "/resourceedge/static/js/2.9c8ccf40.chunk.js",
+    "static/js/2.9c8ccf40.chunk.js.map": "/resourceedge/static/js/2.9c8ccf40.chunk.js.map",
+    "index.html": "/resourceedge/index.html",
+    "static/css/main.99b5ea5b.chunk.css.map": "/resourceedge/static/css/main.99b5ea5b.chunk.css.map",
+    "static/js/2.9c8ccf40.chunk.js.LICENSE.txt": "/resourceedge/static/js/2.9c8ccf40.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e528aaa5.js",
+    "static/js/2.9c8ccf40.chunk.js",
+    "static/css/main.99b5ea5b.chunk.css",
+    "static/js/main.eb0f044c.chunk.js"
+  ]
+}
