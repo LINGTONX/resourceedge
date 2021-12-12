@@ -1,81 +1,69 @@
-section.welcome {
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 1rem;
+
+.welcome{
+  display: flex;
+}
+
+.welcome-side-1{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+}
+.welcome-side-1 h3{
+  font-style: normal;
+  font-size: 48px;
+  line-height: 120%;
+  color: #091E42;
+}
+.welcome-side-1 span{
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding: 2rem 0;
+   
+}
+.welcome-side-2{
+  width: 55%;
+}
+.welcome-side-2 img{
+  /* background: url(.images/relax.svg) no-repeat center center/cover; */
+  height: 506px;
+  max-width: 100%;
+}
+.layout{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width:667px){
+  /* Mobile Utilities */
+  .container{
+      max-width: 667px;
+      margin: 0 auto;
   }
-  .welcome > div {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    height: 100%;
-  }
-  .welcome > div > div:first-of-type {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-  }
-  .welcome > div > div:first-of-type > span:first-of-type {
-    font-family: Circular Std;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 120%;
-    color: #091e42;
-  }
-  .welcome > div > div:last-of-type {
-    
-    width: 110vw;
-    height: 90vh;
-  }
-  .welcome > div > div:last-of-type > img {
-    height: 100%;
-    width: 100%;
+  .padd-1rem{
+      padding: 0 1rem;
   }
   
-  @media screen and (max-width: 768px) {
-    .welcome > div {
-      display: flex;
+  /* mobile Styling */
+  .welcome{
       flex-direction: column;
-  
-      justify-content: space-between;
-      height: 100vh;
-      width: 100%;
-      
-    }
-    .welcome > div > div:first-of-type {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      margin: 2rem auto;
-      width: 80%;
-    }
-    .welcome > div > div:last-of-type {
      
-      align-self: flex-end !important;
-      width: 100%;
-      height: 60vh;
-    }
-    .welcome > div > div:first-of-type > span:first-of-type {
-      font-family: Circular Std;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 34px;
-      line-height: 120%;
-      color: #091e42;
-    }
-    .welcome > div > div:first-of-type > span:last-of-type {
-      font-family: Circular Std;
-      font-style: normal;
-      font-weight: 450;
-      font-size: 14px;
-      line-height: 20px;
-      color: #344563;
-    }
+
   }
-  .layout{
-    max-width: 1200px;
-    margin: 0 auto;
+  .side{
+      width: 100%;
+  }
+  .welcome-side-1{
+      height:220px;
+  }
+  .welcome-side-2 img{
+      height: 300px;
+  }
+  .welcome-side-1 h3{
+    margin-top: 5rem;
+      font-size: 40px;
+  }
 }
