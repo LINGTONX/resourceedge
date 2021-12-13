@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import "./resetpage.css"
+import authLogo from '../../assest/images/authLogo.svg'
+import Alogo from '../../assest/images/Alogo.svg'
+import checkCircleOutline from '../../assest/images/check-circle-outline.svg'
 const Reset = () => {
   const [IsContinueReset, setIsContinueReset] = useState(true)
   const [IsSuccessFul, setIsSuccessFul] = useState(false)
@@ -30,10 +33,10 @@ const Reset = () => {
 
   return (
     <main className='reset'>
-      <img src='images/authLogo.svg' />
+      <img src={authLogo} />
       <form onSubmit={handleFormSubmitReset}>
         <header>
-          <img src="images/Alogo.svg" />
+          <img src={Alogo} />
         </header>
         <main style={IsContinueReset ? null : { height: "fit-content", padding: "2rem 0" }}>
           {
@@ -44,7 +47,7 @@ const Reset = () => {
                 </div>
                 <div>
                   <div style={myStyles5}>
-                    <img src='images/check-circle-outline.svg' style={myStyles4} />
+                    <img src={checkCircleOutline} style={myStyles4} />
                   </div>
                   <p>A recovery email has been sent to your email address. </p>
                 </div>

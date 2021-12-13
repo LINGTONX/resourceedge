@@ -5,7 +5,6 @@ import Landing from './pages/homepage';
 import Reset from './pages/resetpage';
 import SignIn from './pages/signIn';
 import {
-
   Routes,
   Route,
 } from "react-router-dom"
@@ -15,12 +14,10 @@ function App() {
   return <div className="App">
 
     <Routes>
-      <Route path="/" exact element={<Landing />} />
-      <Route path="/login" element={<SignIn />} />
-      <Route path="/reset" element={<Reset />} />
-      <Route path="dashboard" element={<Dashboard />} />
-
-
+        <Route path="/login" exact element={<SignIn />} />
+        <Route path="/reset" exact element={<Reset />} />
+        <Route path="/dashboard" exact element={<Dashboard />} />
+        <Route path="/" exact element={<Landing />} />
     </Routes>
   </div>
 }

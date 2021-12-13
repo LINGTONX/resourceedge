@@ -1,5 +1,9 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import watch from '../../assest/images/watch.svg'
+import authLogo from '../../assest/images/authLogo.svg'
+import Alogo from '../../assest/images/Alogo.svg'
+import editFilled from '../../assest/images/edit-filled.svg'
 import "./signIn.css"
 const SignIn = () => {
   const navigate = useNavigate()
@@ -25,10 +29,10 @@ const SignIn = () => {
 
   return (
     <main className='signIn'>
-      <img src='images/authLogo.svg' />
+      <img src={authLogo} />
       <form onSubmit={handleFormSubmit}>
         <header>
-          <img src="images/Alogo.svg" />
+          <img src={Alogo} />
         </header>
         <main>
           <div>
@@ -43,7 +47,7 @@ const SignIn = () => {
                     <h3>Ositadinma Nwangwu</h3>
                     <p>{Email}</p>
                   </div>
-                  <img src='images/edit-filled.svg'></img>
+                  <img src={editFilled}></img>
                 </>
             }
           </div>
@@ -64,7 +68,7 @@ const SignIn = () => {
                     <input type="password" id="logPasword" placeholder='Enter password' />
                     <div className='empty-to-fill' style={{ background: "#0052CC" }}></div>
                   </div>
-                  <img src='images/watch.svg' />
+                  <img src={watch} />
                 </>
             }
           </div>
