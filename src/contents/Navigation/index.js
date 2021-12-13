@@ -1,16 +1,15 @@
 import React from 'react'
 import { Link, Linkn } from "react-router-dom";
+import LogolandLogo from "../../assest/images/LogolandLogo.svg"
+import Group from "../../assest/images/Group.svg"
 import "./navigation.css"
 const NavigationBar = () => {
-  // const HandleLogin = () => {
-  //   // const history = useHistory()
-  //   // history.push('/login')
-  // }
+
   return (
-    <nav className="layout">
+    <nav >
       <div className="sm-screen">
         <div>
-          <img src="images/Group.svg"></img>
+          <img src={Group}></img>
         </div>
         <div>
           <label htmlFor="hamburger">
@@ -33,7 +32,7 @@ const NavigationBar = () => {
           </div>
         </div>
       </div>
-      <div className="lg-screen">
+      {/* <div className="lg-screen layout" >
         <div>
           <span className="logo">resource edge</span>
           <span className="nav-link"><a>Features</a></span>
@@ -44,7 +43,19 @@ const NavigationBar = () => {
           <button ><Link to={'/login'}>Sign in</Link></button>
         </div>
 
-      </div>
+      </div> */}
+      <nav class="nav-wrapper lg-screen padd-1rem layout">
+            <div class="navlist-1 nav-bar">
+                <img src={LogolandLogo}/>
+                <div class="nav-item"><a href="">Features</a> </div>
+                <div class="nav-item"><a href="">About</a> </div>
+            </div>
+            <div class="navlist-2 nav-bar">
+                <div class="nav-item sign-up"><a href="">Sign up</a> </div>
+                <button ><Link to={'/login'}>Sign in</Link></button>
+                {/* <button> <a href="">Sign in</a></button> */}
+            </div>
+        </nav>     
 
     </nav>
   )

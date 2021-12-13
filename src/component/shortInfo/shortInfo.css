@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@451&display=swap');
+
+
+.message{
+  font-family: 'Readex Pro', sans-serif;
+}
+
 div.message {
     height: 289px;
     width: 24rem;
@@ -8,10 +15,6 @@ div.message {
     padding: 2rem;
     border-radius: 15px;
   }
-  div.message:hover {
-    transition: all 0.4s ease-in-out;
-    box-shadow: -2px -2px 4px rgb(220, 216, 216), 2px 2px 4px grey;
-  }
   div.message > img {
     width: 64px;
     height: 64px;
@@ -19,7 +22,6 @@ div.message {
   }
   div.message > p {
     text-align: start;
-    font-family: Circular Std;
     font-style: normal;
     font-weight: 450;
     font-size: 14px;
@@ -28,12 +30,10 @@ div.message {
   }
   
   div.message > h1 {
-    font-family: Circular Std;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
-  
     color: #091e42;
   }
   

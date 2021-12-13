@@ -1,5 +1,9 @@
 import {useState} from 'react'
 import "./Profile.css"
+import check from "../../assest/images/check.svg"
+import Talentmanager from "../../assest/images/Talentmanager.svg"
+import profileImg from "../../assest/images/profileImg.svg"
+import Employee from "../../assest/images/Employee.svg"
 import { useNavigate } from 'react-router-dom'
 const Profile = () => {
     const navigate = useNavigate()
@@ -11,7 +15,7 @@ const Profile = () => {
     return (
         <div className="profile-container">
             <label htmlFor="profile">
-                <img src="images/profileImg.svg" alt="profile"></img>
+                <img src={profileImg}></img>
             </label>
             <input type="checkbox" id="profile" />
             <div className="profile-dropdown">
@@ -23,15 +27,15 @@ const Profile = () => {
                 <div className="use-as">
                     <span>Use Resource Edge as</span>
                     <div className="talent-manager">
-                        <img src="images/Talent manager.svg"></img>
+                        <img src={Talentmanager}></img>
                         <p>Talent Manager</p>
                         {
-                            !IsActive ? <img src="images/check.svg"></img> : null
+                            !IsActive ? <img src={check}></img> : null
                         }
                     </div>
 
                     <div className="employee">
-                        <img src="images/Employee.svg"></img>
+                        <img src={Employee}></img>
                         <p>Employee</p>
                         {
                             IsActive ? <img src=""></img> : null

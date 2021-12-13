@@ -5,11 +5,9 @@ footer{
 .footer-section{
   display: flex;
   justify-content: space-between;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
-.footer-items{
-  
-}
+
 .footer-items p{
  color: #FFFFFF;
  font-size: 18px;
@@ -41,6 +39,9 @@ footer{
   color: #FAFBFC;
   padding-top: 1rem;
 }
+.footer-links li a img{
+  width: 1.5rem;
+}
 ul{
   list-style: none;
 }
@@ -67,6 +68,9 @@ ul{
   justify-content: center;
   font-size: 30px;
   gap: 20px;
+}
+.footer-links li a img{
+  width: 1.5rem;
 }
 
 .copy{

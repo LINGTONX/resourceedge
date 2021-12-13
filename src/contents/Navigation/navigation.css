@@ -1,16 +1,52 @@
-nav {
-    height: 3rem;
-    width: 100%;
-    display: flex;
-    /* padding: 0 3rem; */
-    justify-content: space-between;
-  }
-  
+
+nav{
+  margin-top: 1rem;
+}
   @media screen and (min-width: 580px) {
     .sm-screen {
       display: none;
     }
-    .lg-screen {
+    a{
+      text-decoration: none;
+     }
+    .nav-wrapper{
+      display: flex;
+      gap: 0.5rem;
+      padding: 0.5rem 0.5rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2rem;
+  }
+
+}
+  .nav-bar{
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 18px;
+  }
+  .navlist-1{
+      gap: 1.5rem;
+      
+  }
+  .navlist-1 a{
+      color: #091E42;
+  }
+  .sign-up a{
+      color: #A5ADBA;
+  }
+  button{
+  padding: 10px 12px;
+  background: #0052CC;
+  border-radius: 4px;
+  border: none;
+  
+  }
+  button a{
+      color: #fff;
+      font-size: 14px;
+  }
+     /*.lg-screen {
       width: 80%;
       display: flex;
       justify-content: space-between;
@@ -62,13 +98,14 @@ nav {
     .lg-screen > div:last-of-type > button:last-of-type > a {
       text-decoration: none;
       color: #fff;
-    }
-  }
+    } */
+  
   
   @media screen and (max-width: 580px) {
     .lg-screen {
       display: none;
     }
+    
     .sm-screen {
       display: flex;
       width: 85%;
@@ -182,6 +219,8 @@ nav {
     }
   }
   .layout{
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
+    
 }
+

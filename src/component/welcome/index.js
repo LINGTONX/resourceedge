@@ -6,7 +6,7 @@ const Welcome = () => {
     <section className='welcome layout'>
       <div className="welcome-side-1 side padd-1rem">
         <h3>Throw paperwork  into the trash where it belongs.</h3>
-        <span>Eliminate all the hassle involved in managing  people operations by automating it.</span>
+        <span>Eliminate all the hassle involved in managing <br/> people operations by automating it.</span>
       </div>
       <div className="welcome-side-2 side">
         <img src={relax} />

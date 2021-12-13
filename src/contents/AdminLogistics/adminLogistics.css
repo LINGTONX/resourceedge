@@ -1,5 +1,5 @@
-section.admin-logistic {
-    /* border: 1px solid black; */
+/* section.admin-logistic {
+    
     width: 100%;
     padding-top: 6rem;
     padding-bottom: 15rem;
@@ -8,7 +8,7 @@ section.admin-logistic {
     gap: 8rem;
   }
   section.admin-logistic > div {
-    /* border: 1px solid red; */
+    
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -33,7 +33,7 @@ section.admin-logistic {
     height: 15rem;
   }
   section.admin-logistic > div > div:nth-of-type(2) {
-    /* border: 1px solid pink; */
+    
   
     width: 100%;
     margin-top: 1rem;
@@ -83,12 +83,12 @@ section.admin-logistic {
       margin: 0 auto;
     }
     section.admin-logistic > div > div:first-of-type > div {
-      /* border: 1px solid black; */
+    
       width: 100% !important;
       padding: 1rem;
     }
     section.admin-logistic > div > div:last-of-type > img {
-      /* border: 1px solid black; */
+     
       width: 100% !important;
       padding: 1rem;
     }
@@ -108,22 +108,91 @@ section.admin-logistic {
       box-shadow: none;
       width: 8rem;
       height: 63px;
-    }
+    } */
     /* .clients {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       
-    } */
+    }
   }
-
-  .layout{
-    max-width: 1200px;
-    margin: 0 auto;
+ */
+ .layout{
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .padd-1rem{
-  padding: 0 1rem;
+padding: 0 1rem;
 }
+ .admin-flex{
+  display: flex;
+  gap: 1.2rem;
+  padding: 3rem 0 0 0;
+}
+.admin-1{
+  flex: 2.5;
+  align-self: center;
+}
+.admin-1 h2{
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 135%;
+  color: #091E42;
+}
+.admin-1 p{
+  font-style: normal;
+  font-weight: 450;
+  font-size: 17px;
+  line-height: 24px;
+  color: #5E6C84;
+  padding-top: 1rem;
+}
+.admin-2{
+  flex: 1;
+}
+.admin-2 h3{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #091E42;
+  padding: 1rem 0;
+}
+.admin-2 p{
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5E6C84;
+}
+
+
+.travel-dashboard img{
+  box-shadow: 0px 18px 31px rgba(9, 30, 66, 0.1);
+  max-width: 100%; 
+  height: 450px;
+  margin: 4.5rem 0 0 0;
+}
+.travel-dashboard{
+ text-align: center;
+}
+
+.client-logos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.7;
+  margin: 6rem 0 8rem 0;
+ 
+}
+.hr-flex img,.admin-2 img{
+  width: 50px;
+  height: 50px;
+}
+
+
+
 .client-logos{
   display: flex;
   flex-wrap: wrap;
@@ -134,28 +203,44 @@ section.admin-logistic {
  
 }
 
-@media (max-width:668px){
+@media (max-width:667px){
   /* Mobile Utilities */
-  .container{
-      max-width: 667px;
-      margin: 0 auto;
-  }
+
   .padd-1rem{
       padding: 0 1rem;
   }
   
+  /* Admin And Logistics */
+  .admin-flex{
+    flex-direction: column;
+    
+}
+.admin-1 h2{
+    font-weight: bold;
+    font-size: 35px;
+}
+.admin-2{
+    padding: 0 3rem;
+}
+.travel-dashboard img{
+    max-width: 100%;
+    margin: 3rem 0 0 0;
+    height: 300px;
+}
+.travel-dashboard{
+    padding: 0;
+}
   /* Client Mobile */
   .client-logos{
       gap: 1.5rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin-left: 1rem;
-  
-  
+      margin-left: 0.5rem;
   }
   
   .client-logos img{
       height: 45px;
+      
       
   }
   .client-logos .img-4{

@@ -1,6 +1,8 @@
 
+
 .welcome{
   display: flex;
+  justify-content: space-between;
 }
 
 .welcome-side-1{
@@ -18,7 +20,7 @@
 }
 .welcome-side-1 span{
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   color: #344563;
   padding: 2rem 0;
@@ -28,21 +30,12 @@
   width: 55%;
 }
 .welcome-side-2 img{
-  /* background: url(.images/relax.svg) no-repeat center center/cover; */
   height: 506px;
   max-width: 100%;
-}
-.layout{
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 @media (max-width:667px){
   /* Mobile Utilities */
-  .container{
-      max-width: 667px;
-      margin: 0 auto;
-  }
   .padd-1rem{
       padding: 0 1rem;
   }
@@ -50,20 +43,18 @@
   /* mobile Styling */
   .welcome{
       flex-direction: column;
-     
-
   }
   .side{
       width: 100%;
   }
-  .welcome-side-1{
-      height:220px;
+  .welcome-side-1 span{
+    font-size: 16px;
+      
   }
   .welcome-side-2 img{
       height: 300px;
   }
   .welcome-side-1 h3{
-    margin-top: 5rem;
       font-size: 40px;
   }
 }

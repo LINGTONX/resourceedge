@@ -15,42 +15,84 @@ import image10 from '../../assest/images/image 10.png'
 const AdminAndLogistics = () => {
   return (
     <section className='admin-logistic layout'>
-      <div>
-        <div>
-          <SectionHeading SecHeading={"Admin & Logistics"} SecContent={"Manage and track company assets as well as logistics for travelling employees"} />
-          <InfoContainer InfoHeading={"Travel & Logistics"} imgSrc={travel} InfoContent={"Make travel requests, get approvals, and have access to travel information."} />
-          <InfoContainer InfoHeading={"Asset Management"} imgSrc={caseImg} InfoContent={"Manage the acquisition, assignment, and disposition of assets seamlessly."} />
-        </div>
-        <div>
-          <img src={tl} />
-        </div>
-      </div>
-      <div>
-        <div>
-          <SectionHeading SecHeading={"Finance"} SecContent={"Generate invoices, track expenditure, and manage complex payrolls for multiple teams and companies"} />
-          <InfoContainer InfoHeading={"RE Vouchers"} imgSrc={rev} InfoContent={"Track and manage expenditure for multiple teams across your organisation using Resource Edge Vouchers."} />
-          <InfoContainer InfoHeading={"Payroll"} imgSrc={payrol} InfoContent={"Our easy to use systems takes away the pain of managing complex payrolls for organisations of all sizes."} />
-        </div>
-        <div>
-          <img src={finan} />
-        </div>
-      </div>
-      <div className='clients layout'>
-        <div>
-          <img src={image7} />
-        </div>
-        <div>
-          <img src={image6} />
-        </div>
-        <div>
-          <img src={image9} />
-        </div>
-        <div>
-          <img src={image10} />
-        </div>
+      <section className="adminLogistics">
+        <div className="container padd-1rem">
+            <div className="admin-flex">
+                <div className="adimFlex admin-1">
+                    <h2>Admin & Logistics</h2>
+                    <p>Manage and track company assets as well as logistics for 
+                        travelling employees</p>
+                </div>
+                <div className="adimFlex admin-2">
+                    <img src={travel}/>
+                    <h3>Travel & Logistics</h3>
+                    <p>Make travel requests, get 
+                        approvals, and have access to 
+                          travel information.
+                    </p>
+                </div>
+                <div className="adimFlex admin-2">
+                    <img src={caseImg}/>
+                    <h3>Travel & Logistics</h3>
+                    <p>Manage the acquisition, 
+                        assignment, and disposition of 
+                        assets seamlessly.
+                    </p>
+                </div>
+                
+            </div>
 
-      </div>
+            <div className="travel-dashboard">
+                <img src={tl}/>
+            </div>
+        </div>
+        
     </section>
+
+      {/* Finance Section */}
+    <section className="finance-section">
+        <div className="layout padd-1rem">
+            <div className="admin-flex">
+                <div className="adimFlex admin-1">
+                    <h2>Finance</h2>
+                    <p>Generate invoices, track expenditure, and manage complex payrolls for <br/>
+                         multiple teams and companies</p>
+                </div>
+                <div className="adimFlex admin-2">
+                    <img src={rev}/>
+                    <h3>RE Vouchers</h3>
+                    <p>Track and manage expenditure 
+                        for multiple teams across your 
+                        organisation using Resource 
+                        Edge Vouchers
+                    </p>
+                </div>
+                <div className="adimFlex admin-2">
+                    <img src={payrol}/>
+                    <h3>Payroll</h3>
+                    <p>Our easy to use systems takes 
+                        away the pain of managing 
+                        complex payrolls for 
+                        organisations of all sizes.
+                    </p>
+                </div> 
+            </div>
+            <div className="travel-dashboard">
+                <img src={finan}/>
+            </div>
+        </div>    
+    </section>
+
+    <section className="clients layout">
+        <div className="client-logos padd-1rem">
+            <img className="img-1" src={image7} alt="unnlogo"/>
+            <img className="img-2" src={image6}  alt="tenecelogo"/>
+            <img className="img-3" src={image9} alt="PEstate Logo"/>
+            <img className="img-4" src={image10} alt="genesys logo"/>
+        </div>
+    </section>
+
+  </section>
   )
 }
 
